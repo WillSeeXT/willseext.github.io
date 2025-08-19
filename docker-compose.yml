@@ -1,0 +1,9 @@
+services:
+  eleventy:
+    image: femtopixel/eleventy
+    volumes:
+      - ./app:/app
+    ports:
+      - "8010:8080"
+    command: ["--serve"]
+    container_name: eleventy
